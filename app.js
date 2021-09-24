@@ -41,15 +41,41 @@ function checkStatus() {
 }
 
 function getWords() {
-  axios
-    .get("https://random-word-api.herokuapp.com/home/word?number=100")
-    .then(function (response) {
-      words = response.data;
-      buttonChange("게임시작");
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  // axios
+  //   .get("https://random-word-api.herokuapp.com/home/word?number=100")
+  //   .then(function (response) {
+  //     words = response.data;
+  //     buttonChange("게임시작");
+  //   })
+  //   .catch(function (error) {
+  //     console.log(error);
+  //   });
+  words = [
+    "ability",
+    "access",
+    "account",
+    "analysis",
+    "benefit",
+    "budget",
+    "consensus",
+    "contrast",
+    "debate",
+    "departure",
+    "description",
+    "enthusiasm",
+    "expansion",
+    "facility",
+    "fare",
+    "halt",
+    "incentive",
+    "inquiry",
+    "investment",
+    "motivation",
+    "occasion",
+    "opportunity",
+    "observance",
+  ];
+  buttonChange("게임시작");
 }
 
 function checkMatch() {
