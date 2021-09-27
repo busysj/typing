@@ -31,6 +31,8 @@ function run() {
   timeInterval = setInterval(countDown, 1000);
   checkInterval = setInterval(checkStatus, 50);
   buttonChange("게임중");
+  const randomIndex = Math.floor(Math.random() * words.length);
+  wordDisplay.innerText = words[randomIndex];
 }
 
 function checkStatus() {
